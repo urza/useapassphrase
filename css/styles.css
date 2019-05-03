@@ -5,7 +5,14 @@
 body {
   margin: 0;
   padding: 0;
+  background:  #002b36;
+  color: #839496;
+  font-size: larger;
 }
+a, a:hover, a:visited{
+  color: #859900;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
@@ -24,21 +31,33 @@ input {
   text-align: center;
   padding: 1%;
 }
-select {
-  font-size: 16px;
-  -webkit-appearance: none;
-  appearance: none;
+#xkcd{
+   display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  height: 60px;
+  width: 90%;
+  text-align: center;
+  padding: 1%;
 }
-select {
-  font-size: 14px;
-  border: 1px solid #ccc;
-  height: 34px;
+#passphrase {
+  font-size: 40px;
+  margin-top: 50px;
+  color:  #93a1a1;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  background: url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA1AQMAAACN/txFAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURQAAAAEBAcq50i8AAAACdFJOU/0BoIZiXgAAAMJJREFUKM9VzTERwzAMhWHlMmRMGYRCGYRSGcQMCqFUAsUQNHrw2XX0JMvWIn2n4SeaJgz3i+5Bb4qDPsSDmJJjYcqulam4Nqbq2ps8eDR58Gzy4NXEkzzYHrUHl0c9uD7qwU1kwX3SIbL8KbL8JbJ8FSXLibLlRMVyomo5KGgOujUHRc1BPClpHMoah4rGoapxVUBcdSM+6OyKyKkYOVVCTpWRUxXkVBU5U5Cc6ZacKUrONK80KS+jyjqqbpO+k37QH/1MXwF6V9G6AAAAAElFTkSuQmCC) no-repeat 97% white;
-  background-size: 10px 5px;
-  padding: 0 25px;
+  display: block;
+  text-align: center;
+}
+#passphrase_select{
+  font-size: large;
+  margin-bottom: 15px;
+}
+.select{
+  font-size: large;
+}
+.description{
+  font-size: larger;
 }
 /*target Internet Explorer 9 and Internet Explorer 10:*/
 @media screen and (min-width:0\0) {
@@ -57,11 +76,11 @@ button {
   transition: all 0.2s ease;
 }
 button:hover {
-  background-color: #5dfa7b;
+  background-color: #859900;
   color: white;
 }
 button:active {
-  background-color: #48c260;
+  background-color: #859900;
 }
 p {
   margin: 20px 0;
@@ -86,7 +105,7 @@ li {
 }
 .container {
   width: 95%;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .header {
@@ -102,61 +121,9 @@ li {
 .passphrase-options {
   margin-top: 1%;
   text-align: center;
-}
-.crack-time-label {
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 72%;
-}
-.crack-time-label .crack-time {
-  font-weight: 400;
-}
-.social-buttons {
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 50px 0;
-}
-.social-buttons svg {
-  vertical-align: middle;
-}
-.social-buttons a {
-  padding: 0 20px 0 20px;
-  text-decoration: none;
-  font-size: 85%;
-}
-.social-buttons .sc--facebook {
-  color: #3b5998;
-  fill: #3b5998;
-}
-.social-buttons .sc--twitter {
-  color: #55acee;
-  fill: #55acee;
-}
-.social-buttons .sc--github {
-  color: black;
-  fill: black;
-}
+
+
 code, .password {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
-}
-.footer {
-  background-color: #eee;
-  border-top: 1px solid #aaa;
-  font-size: 80%;
-  margin-top: 40px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-.footer p {
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }

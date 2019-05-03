@@ -4,29 +4,41 @@
 <meta charset="utf-8" >
 <link rel="stylesheet" href="css/styles.css?__inline=true" />
 <link rel="stylesheet" href="css/fonts.css?__inline=true" />
-<title>Use a Passphrase</title>
+<title>Frázová hesla</title>
 </head>
 <body>
 <div class="container">
   <div class="header">
-    <h1 class="title">Use A <span>Passphrase</span></h1>
+    <h1 class="title">frázová <span>hesla</span></h1>
   </div>
-  <p class="passphrase-label">Generate a passphrase</p>
-  <input id="passphrase" type="text" value="Loading..." onmouseover="this.select()"/>
+  
+  <div class="description">
+  <div id="xkcd"><a href="https://xkcd.com/936/">https://xkcd.com/936/</a></div>
+  <div>
+    Každé slovo je vybíráno ze slovníku cca 72 000 slov a přidává zhruba 14 bitů entropie. Již 4 slova jsou výrazně bezpečnější než klasická "silná" hesla.
+  </div>
+</div>
 
   <div class="passphrase-options">
     <select id="passphrase_select">
-      <option value="4" selected>Four-word passphrase, with spaces</option>
-      <option value="5">Five-word passphrase, with spaces</option>
-      <option value="6">Six-word passphrase, with spaces</option>
-      <option value="7">Seven-word passphrase, with spaces</option>
-      <option value="12">Twelve-word passphrase, with spaces</option>
+      <option value="4" selected>4 slova</option>
+      <option value="5">5 slov</option>
+      <option value="6">6 slov</option>
     </select>
-    <button class="btn-generate">Generate New Passphrase</button>
+    <div>
+      <button class="btn-generate">Generuj!</button>
+    </div>
   </div>
   
+  
+  <div id="passphrase">
+  </div>
 
 </div>
+
+
+</div>
+
 
 <script src="js/wordlist.js?__inline=true"></script>
 <script src="js/script.js?__inline=true"></script>
