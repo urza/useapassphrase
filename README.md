@@ -1,23 +1,12 @@
-# Use A Passphrase (.com)
+html and javascript is  forked from https://www.useapassphrase.com/
 
-This site is intended to both generate simple passphrases as well as advocate
-for the use of random passphrases over human-generated passwords.
+css sytle is adopted solarized dark https://ethanschoonover.com/solarized/
 
-# How to Contribute
+czech words are from http://ucnk.korpus.cz/retrograd10.php
 
-This site needs a lot of work. Please contribute to any of the following:
+xkcd inspiration of it all https://xkcd.com/936/
 
-* To improving the persuasiveness of the argument, which is all contained in
-  `passphrase_advocate.md`.
-* To the wordlist from which the passwords are generated, which is contained in `js/wordlist.js`
-* Add additional password possibilities (e.g. four-word-with-space).
+more sophisticated version with larger dictionary and different generation modes written in C#: https://github.com/urza/PassphraseGenCZCsharp/
 
-# Running It Locally
 
-It requires grunt-cli (`npm install -g grunt-cli`), after which you can just
-run `npm install` and then `grunt`.
-
-If you have Docker & Docker Compose installed, you should theoretically just be
-able to run `docker-compose up` to build the /dist directory, which will create
-the index.html file that is entirely self-contained (i.e. it makes no external
-calls).
+use at your own risk
