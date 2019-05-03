@@ -1,4 +1,4 @@
-* {
+html {
   font-family: 'MH';
   line-height: 160%;
 }
@@ -50,7 +50,7 @@ input {
   text-align: center;
 }
 #passphrase_select{
-  font-size: large;
+  font-size: larger;
   margin-bottom: 15px;
 }
 .select{
@@ -59,13 +59,11 @@ input {
 .description{
   font-size: larger;
 }
-/*target Internet Explorer 9 and Internet Explorer 10:*/
-@media screen and (min-width:0\0) {
-  select {
-    background:none;
-    padding: 5px;
+.btn-generate{
+    font-size: larger;
+    height: 50px;
   }
-}
+
 button {
   font-size: 14px;
   border: 1px solid #ddd;
@@ -74,6 +72,9 @@ button {
   background-color: white;
   height: 34px;
   transition: all 0.2s ease;
+  height: 80px;
+  width: 200px;
+  max-width: 400px;
 }
 button:hover {
   background-color: #859900;
@@ -82,6 +83,41 @@ button:hover {
 button:active {
   background-color: #859900;
 }
+
+@media only screen and (max-width: 768px)
+{
+ 
+  .btn-generate{
+    width: 100%;
+    display: block;
+    padding: 0;
+    font-size: larger;
+    height: 60px;
+  }
+
+  #passphrase_select
+  {
+    font-size: larger;
+    height: 40px;
+      width:100%;
+      margin-top: 20px;
+  }
+  
+  .description{
+    font-size: small;
+  }
+
+  h1 {
+  text-align: center;
+  font: 50 35px 'MH';
+  margin: 0 auto 10px auto;
+}
+h1 span {
+  font-weight: 200;
+}
+}
+
+
 p {
   margin: 20px 0;
 }
@@ -127,3 +163,5 @@ code, .password {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
 }
+
+
