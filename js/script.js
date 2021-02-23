@@ -17,7 +17,7 @@ function generatePassword(numberOfWords) {
       generatedPasswordArray.push(wordlist[index]);
   }
 
-  return generatedPasswordArray.join(' ');
+  return generatedPasswordArray.join('-');
 }
 
 function setStyleFromWordNumber(passwordField, numberOfWords) {
@@ -31,7 +31,7 @@ var passwordField = document.getElementById('passphrase');
 var button = document.querySelector('.btn-generate');
 
 // Initially run it upon load
-passwordField.innerHTML = generatePassword(4);
+passwordField.innerHTML = generatePassword(3);
 
 // Listen for a button click
 button.addEventListener('click', function() {
